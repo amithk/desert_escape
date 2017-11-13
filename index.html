@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+            div.hide_start_button {
+                display:none;
+                margin-left: 2cm;
+                margin-top: 2cm;
+            }
+            
+            div.show_start_button {
+                display:block;
+                margin-left: 2cm;
+                margin-top: 2cm;
+            }
+            
+            div.hide_game {
+                display:none;
+                margin-left: 2cm;
+                margin-top: 2cm;
+                width: 20cm;
+            }
+            
+            div.show_game {
+                display:block;
+                margin-left: 2cm;
+                margin-top: 2cm;
+                width: 20cm;
+            }
+            
+            div.input_text_box {
+                margin-top: 1cm;
+            }
+        </style>
+    </head>
+    <body onload="OnLoadScript()">
+        <div class="show_start_button" id="StartButton">
+            <input type="button" value="Start Game" onclick="StartGame()"></input>
+        </div>
+        <div class="hide_game" id="GameDiv">
+            <div class="" id="TextDiv1">
+            </div>
+            <div class="" id="TextDiv2">
+            </div>
+            <div class="" id="TextDiv3">
+            </div>
+            <div class="input_text_box" id="input_text_box_div_id">
+                <input type="text" id="input_textbox" onkeypress="OnKeyPressHandler(event)">
+            </div>
+        </div>
+        <script src="./game_text.js"> </script>
+        <script src="./game_logic.js"> </script>
+    </body>
+    
+</html>
